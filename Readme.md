@@ -66,7 +66,7 @@ web:
         - db
         - search        
     volumes:
-        - //c/Users/cedric/docker/data/web:/var/www/html
+        - /Users/cedric/sugar-docker-example/data/web:/var/www/html
 db:
     container_name: db
     image: percona:5.6
@@ -75,7 +75,7 @@ db:
     ports:
         - 3306:3306
     volumes:
-        - //c/Users/cedric/docker/data/mysql:/var/lib/mysql
+        - /Users/cedric/sugar-docker-example/data/mysql:/var/lib/mysql
 search:
     container_name: search
     image: elasticsearch:1.4
@@ -83,7 +83,7 @@ search:
         - 9200:9200
         - 9300:9300
     volumes:
-        - //c/Users/cedric/docker/data/elasticsearch:/usr/share/elasticsearch/data
+        - /Users/cedric/sugar-docker-example/data/elasticsearch:/usr/share/elasticsearch/data
 ```
 
 We can see in this file:
