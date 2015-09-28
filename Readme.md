@@ -74,16 +74,12 @@ db:
         - MYSQL_ROOT_PASSWORD=root
     ports:
         - 3306:3306
-    volumes:
-        - /Users/cedric/sugar-docker-example/data/mysql:/var/lib/mysql
 search:
     container_name: search
     image: elasticsearch:1.4
     ports:
         - 9200:9200
         - 9300:9300
-    volumes:
-        - /Users/cedric/sugar-docker-example/data/elasticsearch:/usr/share/elasticsearch/data
 ```
 
 We can see in this file:
